@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/task.css"> 
+  <title>E-commerce product page</title>
+  <!--Head-->
+</head>
+<body>
+  <header class="top-header">
+    <div class="top-header__left">
+      <button class="nav-btn" type="button" aria-controls="main-nav" aria-expanded="false">
+        <span class="sr-only">Menu button</span>
+        <img src="img/icon-menu.svg" alt="" role="presentation">
+        </button>
+        <!-- logo top-->
+      <h1 class="logo">
+        <h1>sneakers</h1>
+      </h1>
+        <nav class="main-nav" id="main-nav" aria-label="Main menu">
+          <div class="main-nav__content-container">
+            <button class="main-nav__close-btn" type="button">
+              <span class="sr-only">Close menu</span>
+              <span class="icon icon-close" aria-hidden="true"></span>
+            </button>
+            <ul class="main-nav__links">
+              <li>
+                <a href="#" class="nav-item">Collections</a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">Men</a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">Women</a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <!--face and cart icon-->
+    <div class="top-header__right">
+      <button class="top-header__btn-cart" type="button" aria-controls="cart-section" aria-expanded="false">
+        <span class="sr-only">Button cart</span>
+        <span class="icon icon-cart" aria-hidden="true"></span>
+        <span class="items-quantity">
+          <span class="value">0</span><span class="sr-only">items</span>
+        </span>
+      </button>
+      <button class="user-container" type="button" aria-label="User section">
+        <img src="img/image-avatar.png" alt="" class="user-container__img" role="presentation">
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article class="product">
+      <section class="product__slider default-container">
+        <button type="button" class="product__slider___btn-close-lightbox">
+          <span class="sr-only">Close lightbox</span>
+          <span class="icon icon-close"</span>
+        </button>  
+        <div class="image-box">
+          <button type="button" class="btn-previousImage">
+            <span class="sr-only">Previous Image</span>
+            <span class="icon icon-previous"></span>
+          </button>
+          <button type="button" class="btn-nextImage">
+            <span class="sr-only">Next Image</span>
+            <span class="icon icon-next"></span>
+          </button>
+          <img src="img/image-product-1.jpg" alt="Brown and white sneaker" class="image-box__src">
+        </div>
+        
+        <ul class="product__thumbs default-container" >
+          <li class="thumb-item">
+            <button type="button" class="thumb-item__btn">
+              <img src="img/image-product-1-thumbnail.jpg" alt="product 1" >
+            </button>
+          </li>
+          <li class="thumb-item">
+            <button type="button" class="thumb-item__btn">
+              <img src="img/image-product-2-thumbnail.jpg" alt="product 2" >
+            </button>
+          </li>
+          <li class="thumb-item">
+            <button type="button" class="thumb-item__btn" >
+              <img src="img/image-product-3-thumbnail.jpg" alt="product 3" >
+            </button>
+          </li>
+          <li class="thumb-item">
+            <button type="button" class="thumb-item__btn">
+              <img src="img/image-product-4-thumbnail.jpg" alt="product 4">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="product__content default-container">
+        <header>
+          <h2 class="company-name" >Sneaker Company</h2>
+          <p class="product__name" >Autumn Limited Edition Sneakers</p>
+          <h3 class="product__title">Fall Limited Edition Sneakers</h3>
+        </header>
+        <p class="product__description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="product__price">
+          <div class="discount-price">
+            <p class="discount-price__value">
+              &dollar;125.00
+              <span class="sr-only">dollars</span>
+            </p>
+            <p class="discount-price__discount">50%</p>
+          </div>
+          <div class="full-price">
+            <p>
+              &dollar;250.00
+              <span class="sr-only">dollars</span>
+            </p>
+          </div>
+        </div>
+        
+        <form action="#" class="cart-form">
+          <div class="cart-form__input-container">
+            <button type="button" class="btn-changeValue minus-item">
+              <span class="sr-only">Minus one item</span>
+              <span class="icon icon-minus"></span>
+            </button>
+            <label for="product__quantity" class="sr-only">Set the quantity manually</label>
+            <input type="number" min="0" value="0" id="product__quantity">
+            <button type="button" class="btn-changeValue plus-item">
+              <span class="sr-only">Plus one item</span>
+              <span class="icon icon-plus"></span>
+            </button>
+          </div>
+          <button type="button" class="cart-form__add-btn">
+            <span class="icon icon-cart" ></span>
+            Add to cart
+          </button>
+        </form>
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>
